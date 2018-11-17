@@ -46,8 +46,8 @@ This project was started purely as a learning tool to aid myself with learning G
     - The registration, login and any routes with input forms are validated to make sure they are not empty, have the correct format or unique if a user is entering their email address on sign up.
 
 ## Setup
-* Load the MySQL database schema located at ./static/db/userAuthDBSchema.sql
-* Set the app environment variables located at ./.env
+* Load the MySQL database schema located at **./static/db/userAuthDBSchema.sql**
+* Set the app environment variables located at **./.env**
     - **DB_USERNAME =** _Your MySQL server username_
     - **DB_PASSWORD =** _Your MySQL server password_
     - **DB_ADDRESS =** _Your MySQL server address_
