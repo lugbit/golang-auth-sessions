@@ -11,10 +11,13 @@ A custom registration, authentication and session handling implemented in Golang
 This project was started purely as a learning tool to aid myself with learning Golang and specifically web development with Golang. I wanted to incorporate Go with a RDBMS such as MySQL as well as implement other features such as account verification upon sign up and sessions without the use of a framework.
  
 ## Screenshots
-![Activation reminder](/static/images/activation-reminder.png)
-![My Profile](/static/images/profile.png)
-![Registration](/static/images/register.png)
-![Login](/static/images/login.png)
+![activation-reminder](https://user-images.githubusercontent.com/16932395/48658923-e191e480-ea9d-11e8-9c52-6b8500493798.PNG)
+
+![login](https://user-images.githubusercontent.com/16932395/48658924-e22a7b00-ea9d-11e8-9f84-ce506945791e.PNG)
+
+![profile](https://user-images.githubusercontent.com/16932395/48658925-e22a7b00-ea9d-11e8-849d-d51911e36475.PNG)
+
+![register](https://user-images.githubusercontent.com/16932395/48658926-e22a7b00-ea9d-11e8-932d-132f79d86a7e.PNG)
 
 ## Tech/packages used
 - [Golang](https://golang.org/)
