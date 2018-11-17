@@ -1,0 +1,4 @@
+# Ignore all .exe files
+*.exe
+# Ignore .vscode dir associated with Visual Studio Code
+/.vscode
