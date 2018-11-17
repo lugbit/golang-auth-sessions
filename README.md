@@ -1,6 +1,6 @@
 <html>
     <p align="center" >
-        <img width="30%" src="./static/images/lugbit_logo.png"/>
+        <img width="40%" src="./static/images/lugbit_logo.png"/>
     </p>
 </html>
 
@@ -11,10 +11,10 @@ A custom registration, authentication and session handling implemented in Golang
 This project was started purely as a learning tool to aid myself with learning Golang and specifically web development with Golang. I wanted to incorporate Go with a RDBMS such as MySQL as well as implement other features such as account verification upon sign up and sessions without the use of a framework.
  
 ## Screenshots
-![Activation reminder](./static/images/activation-reminder.png)
-![My Profile](./static/images/profile.png)
-![Registration](./static/images/register.png)
-![Login](./static/images/login.png)
+![Activation reminder](/static/images/activation-reminder.png)
+![My Profile](/static/images/profile.png)
+![Registration](/static/images/register.png)
+![Login](/static/images/login.png)
 
 ## Tech/packages used
 - [Golang](https://golang.org/)
