@@ -1,6 +1,6 @@
 <html>
     <p align="center" >
-        <img width="30%" src="lugbit_logo.png"/>
+        <img width="30%" src="./static/images/lugbit_logo.png"/>
     </p>
 </html>
 
