@@ -27,14 +27,14 @@ This project was started purely as a learning tool to aid myself with learning G
 - [Bootstrap 4](https://getbootstrap.com/)
 
 ## Features
-* Registration and activation
+* **Registration and activation**
     - Activation link is sent to the user's registration email with a UUID token embedded upon signing up. This one time use link must be used before it is expired or it will not activate the associated account.
     - Activation links are one time use. Once clicked, it will be marked as used in the database and cannot be used again.
     - Activaton links can be resent by visiting the /send-activation route which will generate a new activation link with a new expiry date.
-* Authentication
+* **Authentication**
     - Registered users with activated accounts can login with their email and password.
     - The email address the user enters is checked against the database. If the email exists, the password entered is hashed and compared against the hashed password entry in the database and if the hash matches, the user is logged in and a session is created.
-* Sessions
+* **Sessions**
     - Once a user successfully authenticates, a session is created.
     - The UUID generated upon logging in is inserted in the sessions table with the user's unique id.
     - A cookie is sent to the client with the same UUID that was inserted in the database.
@@ -42,26 +42,26 @@ This project was started purely as a learning tool to aid myself with learning G
     - Sessions and cookies have a maximum life before they expire, once expired, the user will need to login again.
     - Sessions and cookies are automatically renewed when the user makes a request to any secured routes. This will reset the max life of the session and cookie.
     - Session entries along with the session cookie is destroyed upon logging out.
-* Input validation
+* **Input validation**
     - The registration, login and any routes with input forms are validated to make sure they are not empty, have the correct format or unique if a user is entering their email address on sign up.
 
 ## How to use
 * Load the MySQL database schema located at ./static/db/userAuthDBSchema.sql
 * Set the app environment variables located at ./.env
-    - DB_USERNAME = Your MySQL server username
-    - DB_PASSWORD = Your MySQL server password
-    - DB_ADDRESS = Your MySQL server address
-    - DB_PORT = Your MySQL server port 
-    - DB_NAME = The database name, the default is "userAuthDB" as set on the schema.
-    - SENDER_ADDRESS = Verification link sender email address
-    - SENDER_PASSWORD = Verification link sender email address password
-    - SMTP_SERVER = Verification link sender email address SMTP server
-* Build the binary by running go build and then run the executable
+    - **DB_USERNAME =** _Your MySQL server username_
+    - **DB_PASSWORD =** _Your MySQL server password_
+    - **DB_ADDRESS =** _Your MySQL server address_
+    - **DB_PORT =** _Your MySQL server port_ 
+    - **DB_NAME =** _The database name, the default is "userAuthDB" as set on the schema._
+    - **SENDER_ADDRESS =** _Verification link sender email address_
+    - **SENDER_PASSWORD =** _Verification link sender email address password_
+    - **SMTP_SERVER =** _Verification link sender email address SMTP server_
+* Build the binary by running **go build** and then run the executable
 ```
 go build
 
 ```
-* Visit localhost:8080 on your web browser
+* Visit **localhost:8080** on your web browser
 
 ## Credits
 Thanks to [Todd McLeod](https://github.com/GoesToEleven) and particularly his course on Udemy([Course Repo](https://github.com/GoesToEleven/golang-web-dev)).
